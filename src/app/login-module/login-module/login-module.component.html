@@ -1,0 +1,25 @@
+<header>
+    <h1 class="h2">{{applName}}</h1></header>
+<nav></nav>
+<section>
+        <!-- Use Gatsby for Image-->
+        <img class="mb-4" src="" alt="Logo from Gatsby" width="72" height="72">
+        <h1 class="h5 mb-3 font-weight-normal">Login Page</h1>
+        <div class="text-center center-elem">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Enter valid Email Address" style="width: fit-content;" required autofocus>
+        </div>
+        <br/>
+        <div class="text-center center-elem">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Your Password here" style="width: fit-content;" required>            
+        </div>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="clickedSignInButton()">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; rmanojcse06@gmail.com</p>
+    
+</section>

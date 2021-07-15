@@ -1,0 +1,41 @@
+npm install -g @angular/cli
+ ng new feedback-app
+
+ng new feedback-app --style=scss
+Node.js version v15.6.0 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/releases/.
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+CREATE feedback-app/angular.json (3243 bytes)
+CREATE feedback-app/package.json (1074 bytes)
+CREATE feedback-app/README.md (1057 bytes)
+CREATE feedback-app/tsconfig.json (783 bytes)
+CREATE feedback-app/.editorconfig (274 bytes)
+CREATE feedback-app/.gitignore (604 bytes)
+CREATE feedback-app/.browserslistrc (703 bytes)
+CREATE feedback-app/karma.conf.js (1429 bytes)
+CREATE feedback-app/tsconfig.app.json (287 bytes)
+CREATE feedback-app/tsconfig.spec.json (333 bytes)
+CREATE feedback-app/src/favicon.ico (948 bytes)
+CREATE feedback-app/src/index.html (297 bytes)
+CREATE feedback-app/src/main.ts (372 bytes)
+CREATE feedback-app/src/polyfills.ts (2820 bytes)
+CREATE feedback-app/src/styles.scss (80 bytes)
+CREATE feedback-app/src/test.ts (743 bytes)
+CREATE feedback-app/src/assets/.gitkeep (0 bytes)
+CREATE feedback-app/src/environments/environment.prod.ts (51 bytes)
+CREATE feedback-app/src/environments/environment.ts (658 bytes)
+CREATE feedback-app/src/app/app-routing.module.ts (245 bytes)
+CREATE feedback-app/src/app/app.module.ts (393 bytes)
+CREATE feedback-app/src/app/app.component.html (24617 bytes)
+CREATE feedback-app/src/app/app.component.spec.ts (1091 bytes)
+CREATE feedback-app/src/app/app.component.ts (217 bytes)
+CREATE feedback-app/src/app/app.component.scss (0 bytes)
+√ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.
+
+https://angular.io/cli/generate
+
+
+ng generate module loginModule
+npm install bootstrap 

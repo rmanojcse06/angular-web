@@ -1,0 +1,13 @@
+<span class="h6 mb-3 ">Angular :: One Way Binding</span><br/>
+<label for="ui-one-txt">{{uiOneVal}}</label><br/>
+<input id="ui-one-txt" type="text" placeholder="Enter something here">
+<button id="ui-one-button" (click)="updateUiOne()">Update</button>
+
+<br/>
+<br/>
+<br/>
+
+<span class="h6 mb-3 ">Angular :: Two Way Binding</span><br/>
+<label for="ui-two-txt">{{uiTwoVal}}</label><br/>
+<input id="ui-two-txt" type="text" placeholder="Enter something here" [(ngModel)]="uiTwoVal">
+<button id="ui-two-button" (click)="printUiTwo()">Print On Console</button>

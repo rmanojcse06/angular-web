@@ -1,0 +1,9 @@
+<!-- <p [class]="colorClassName">color works!</p> -->
+<p class={{colorClassName}}>Color Works!</p>
+<table class="container">
+    <tr *ngIf="colorCssMap">
+      <td class="col-sm" *ngFor="let entry of getColorCssClassNames">
+        <button (click)="updateColor(entry)">{{getColorValue(entry)}}</button>
+      </td>
+    </tr>
+</table>
