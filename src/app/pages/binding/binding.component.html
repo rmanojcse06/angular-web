@@ -1,0 +1,130 @@
+<p>binding works!</p>
+<fieldset>
+    <legend>Binding using ElementRef</legend>
+    <table>
+        <tbody>
+            <tr>
+                <td>You type, we show</td>
+                <td><input #showInput /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label #showInputLbl></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="submitForm3()">Submit</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</fieldset>
+<form #bindingForm="ngForm" (submit)="submitForm(bindingForm)">
+    <fieldset>
+        <legend>Form Binding </legend>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>First::</td>
+                    <td><input name="firstName" ngModel required #firstName="ngModel" /></td>
+                </tr>
+                <tr>
+                    <td>Last::</td>
+                    <td><input name="lastName" ngModel required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+
+    <fieldset>
+        <legend>(input) One way Binding - View to Component </legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Did</td>
+                    <td><input ngModel #oneWayDid/></td>
+                </tr>
+                <tr>
+                    <td>DidVal</td>
+                    <td><input ngModel #oneWayDidName/></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button (click)="submitFormOneWayBind(oneWayDid,oneWayDidName)">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label style="color:burlywood;">{{configs.did}} => {{configs.didName}}</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+<form>
+    <fieldset>
+        <legend>(input) Two way Binding - View to Component </legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Did</td>
+                    <td><input (input)="setDid($event)" /></td>
+                </tr>
+                <tr>
+                    <td>DidVal</td>
+                    <td><input (input)="setDidName($event)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button (click)="submitForm2($event)">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label style="color:blue;">{{configs.did}} => {{configs.didName}}</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+
+
+<form>
+    <fieldset>
+        <legend>[(NgModel)] Two way Binding </legend>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Did</td>
+                    <td><input name="did" [(ngModel)]="configs.did" /></td>
+                </tr>
+                <tr>
+                    <td>DidVal</td>
+                    <td><input name="didName" [(ngModel)]="configs.didName"
+                            (ngModelChange)="configs.didName = $event" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button (click)="submitForm2($event)">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label style="color:green;">{{configs.did}} => {{configs.didName}}</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>

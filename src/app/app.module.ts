@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ColorComponent } from './color/color.component';
 import { LoginModuleModule } from './login-module/login-module.module';
 import { UserInputComponent } from './user-input/user-input.component';
+import { BindingComponent } from './pages/binding/binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorComponent,
-    UserInputComponent
+    UserInputComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
